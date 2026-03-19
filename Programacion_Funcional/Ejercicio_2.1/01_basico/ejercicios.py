@@ -62,5 +62,4 @@ print("2. Redondea el número con round()")
 print("3. Haz la división entera entre el número que te salió y el número 2")
 print("4. El resultado debería ser 1")
 
-
 print(f"El resultado es: {round(3.14159) // 2}")
