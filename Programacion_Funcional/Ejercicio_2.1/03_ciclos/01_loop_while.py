@@ -65,6 +65,3 @@ while numero < 0:
             print("El numero debe ser positivo. Intenta otra vez")
     except:
         print("Lo que introduces debe ser un numero!")
-
-###
-# EJERCICIOS (while)
