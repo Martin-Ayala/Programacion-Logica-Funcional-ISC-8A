@@ -52,7 +52,3 @@ print(animales_mayus)
 # Muestra los numeros pares de una lista
 pares = [num for num in [1, 2, 3, 4, 5, 6] if num % 2 == 0]
 print(pares)
-
-###
-# EJERCICIOS (for)
-###
