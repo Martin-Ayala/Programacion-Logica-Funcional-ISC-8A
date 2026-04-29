@@ -58,4 +58,35 @@ describir_persona(1, 25, "gato")
 describir_persona("Carlos", 25, "pajaro")
 describir_persona("persona", "ingeniero", 39)
 
-# Argumentos por clave
+# Argumentos por clave}
+# parametros nombrados
+describir_persona(sexo="perro", nombre="Reyes", edad=25)
+describir_persona(sexo="mujer", nombre="Alejandra", edad=21)
+
+# Argumentos de longitud de variable (*args)
+def sumar_numeros(*args):
+    suma = 0
+    for numero in args:
+        suma += numero
+    return suma
+
+print(sumar_numeros(1, 2, 3, 4, 5))
+print(sumar_numeros(1, 2))
+print(sumar_numeros(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+# Argumentos de clave-valor variable (**kwargs):
+def mostrar_informacion_de(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+
+mostrar_informacion_de(nombre="Carlos", edad=25, sexo="ave")
+print("\n")
+mostrar_informacion_de(nombre="Sofia", edad=21, country="Mexico")
+print("\n")
+mostrar_informacion_de(nick="socio", es_sub=True, is_rich=True)
+print("\n")
+mostrar_informacion_de(super_name="La que barre", es_modo=True, gatos=40)
+
+# Ejercicios
+# Volver a los ejercicios anteriores
+# y convertirlos en funciones
