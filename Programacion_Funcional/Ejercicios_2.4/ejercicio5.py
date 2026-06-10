@@ -46,7 +46,7 @@ precios_con_descuento = list(map(lambda precio: precio * 0.90, orden))
 print(precios_con_descuento)
 
 #inciso 4 y 5
-bebidas_caras = list(filter(lambda precio: precio > 25, precios_descuento))
+bebidas_caras = list(filter(lambda precio: precio > 25, precios_con_descuento))
 
 #se imprime la lista de bebidas caras
 print(bebidas_caras)
